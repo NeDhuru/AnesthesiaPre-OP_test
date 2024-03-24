@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Health Questionnaire</title>
+</head>
+<body>
+   <h1>Health Questionnaire</h1>
+   <form id="healthForm" action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" ><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" ><br><br>
+
+      <label for="last_meal">When was your last meal of the day?</label>
+      <input type="datetime-local" id="last_meal" name="last_meal" ><br><br>
+
+      <label for="last_drink">When was your last drink of the day?</label>
+      <input type="datetime-local" id="last_drink" name="last_drink" ><br><br>
+
+      <label for="allergies">State your allergies and its reaction:</label>
+      <textarea id="allergies" name="allergies"></textarea><br><br>
+
+      <label for="dizziness">Do you feel any dizziness or shortness of breath while performing daily activities?</label><br>
+      <input type="radio" id="dizziness_yes" name="dizziness" value="Yes">
+      <label for="dizziness_yes">Yes</label>
+      <input type="radio" id="dizziness_no" name="dizziness" value="No">
+      <label for="dizziness_no">No</label><br><br>
+
+      <label for="blood_pressure">Do you have high blood pressure?</label><br>
+      <input type="radio" id="bp_yes" name="blood_pressure" value="Yes">
+      <label for="bp_yes">Yes</label>
+      <input type="radio" id="bp_no" name="blood_pressure" value="No">
+      <label for="bp_no">No</label><br><br>
+
+      <label for="heart_attack_stroke">Have you ever had a heart attack or stroke?</label><br>
+      <input type="radio" id="ha_yes" name="heart_attack_stroke" value="Yes">
+      <label for="ha_yes">Yes</label>
+      <input type="radio" id="ha_no" name="heart_attack_stroke" value="No">
+      <label for="ha_no">No</label><br><br>
+
+      <label for="pacemaker">Do you have any pacemaker or AICD?</label><br>
+      <input type="radio" id="pacemaker_yes" name="pacemaker" value="Yes">
+      <label for="pacemaker_yes">Yes</label>
+      <input type="radio" id="pacemaker_no" name="pacemaker" value="No">
+      <label for="pacemaker_no">No</label><br>
+      <label for="last_pacemaker_check">If yes, when was it last checked?</label>
+      <input type="datetime-local" id="last_pacemaker_check" name="last_pacemaker_check"><br><br>
+
+      <label for="arrhythmia">Do you have any type of arrhythmia of the heart?</label><br>
+      <input type="radio" id="arrhythmia_yes" name="arrhythmia" value="Yes">
+      <label for="arrhythmia_yes">Yes</label>
+      <input type="radio" id="arrhythmia_no" name="arrhythmia" value="No">
+      <label for="arrhythmia_no">No</label><br><br>
+
+      <label for="respiratory_conditions">Do you have Asthma, COPD, Emphysema, or a history of Bronchitis?</label><br>
+      <input type="radio" id="respiratory_yes" name="respiratory_conditions" value="Yes">
+      <label for="respiratory_yes">Yes</label>
+      <input type="radio" id="respiratory_no" name="respiratory_conditions" value="No">
+      <label for="respiratory_no">No</label><br><br>
+
+      <label for="respiratory_infection">Did you have any cold, cough, or any respiratory infection recently?</label><br>
+      <input type="radio" id="infection_yes" name="respiratory_infection" value="Yes">
+      <label for="infection_yes">Yes</label>
+      <input type="radio" id="infection_no" name="respiratory_infection" value="No">
+      <label for="infection_no">No</label><br><br>
+
+      <label for="sleep_apnea">Do you have sleep apnea?</label><br>
+      <input type="radio" id="apnea_yes" name="sleep_apnea" value="Yes">
+      <label for="apnea_yes">Yes</label>
+      <input type="radio" id="apnea_no" name="sleep_apnea" value="No">
+      <label for="apnea_no">No</label><br>
+      <label for="cpap_machine">If yes, do you use the CPAP machine?</label>
+      <input type="radio" id="cpap_yes" name="cpap_machine" value="Yes">
+      <label for="cpap_yes">Yes</label>
+      <input type="radio" id="cpap_no" name="cpap_machine" value="No">
+      <label for="cpap_no">No</label><br><br>
+
+      <label for="snoring">Have you been told you snore a lot?</label><br>
+      <input type="radio" id="snoring_yes" name="snoring" value="Yes">
+      <label for="snoring_yes">Yes</label>
+      <input type="radio" id="snoring_no" name="snoring" value="No">
+      <label for="snoring_no">No</label><br><br>
+
+      <label for="diabetes">Do you have Diabetes?</label><br>
+      <input type="radio" id="diabetes_yes" name="diabetes" value="Yes">
+      <label for="diabetes_yes">Yes</label>
+      <input type="radio" id="diabetes_no" name="diabetes" value="No">
+      <label for="diabetes_no">No</label><br><br>
+
+      <label for="acid_reflux">Do you suffer from Acid reflux?</label><br>
+      <input type="radio" id="acid_yes" name="acid_reflux" value="Yes">
+      <label for="acid_yes">Yes</label>
+      <input type="radio" id="acid_no" name="acid_reflux" value="No">
+      <label for="acid_no">No</label><br><br>
+
+      <label for="gastritis"> Do you suffer from gastritis? </label><br>
+      <input type="radio" id="gastritis_yes" name="gastritis" value="Yes">
+      <label for="gastritis_yes">Yes</label>
+      <input type="radio" id="gastritis_no" name="gastritis" value="No">
+      <label for="gastritis_no">No</label><br><br>
+
+      <label for="diverticulosis">Do you have diverticulosis?</label><br>
+      <input type="radio" id="diverticulosis_yes" name="diverticulosis" value="Yes">
+      <label for="diverticulosis_yes">Yes</label>
+      <input type="radio" id="diverticulosis_no" name="diverticulosis" value="No">
+      <label for="diverticulosis_no">No</label><br><br>
+
+      <label for="kidney_problems">Do you have any kidney problem? (kidney stones, reduced kidney function, or renal failure)</label><br>
+      <input type="radio" id="kidney_yes" name="kidney_problems" value="Yes">
+      <label for="kidney_yes">Yes</label>
+      <input type="radio" id="kidney_no" name="kidney_problems" value="No">
+      <label for="kidney_no">No</label><br><br>
+
+      <label for="dialysis">Are you on Dialysis?</label><br>
+      <input type="radio" id="dialysis_yes" name="dialysis" value="Yes">
+      <label for="dialysis_yes">Yes</label>
+      <input type="radio" id="dialysis_no" name="dialysis" value="No">
+      <label for="dialysis_no">No</label><br><br>
+
+      <label for="liver_problems">Do you have liver problems? (Fatty liver)</label><br>
+      <input type="radio" id="liver_yes" name="liver_problems" value="Yes">
+      <label for="liver_yes">Yes</label>
+      <input type="radio" id="liver_no" name="liver_problems" value="No">
+      <label for="liver_no">No</label><br><br>
+
+      <label for="hiv_hepatitis">Have you been diagnosed with HIV or Hepatitis?</label><br>
+      <input type="radio" id="hiv_hepatitis_yes" name="hiv_hepatitis" value="Yes">
+      <label for="hiv_hepatitis_yes">Yes</label>
+      <input type="radio" id="hiv_hepatitis_no" name="hiv_hepatitis" value="No">
+      <label for="hiv_hepatitis_no">No</label><br><br>
+
+      <label for="back_problems">Do you have any back problems? If yes, please elaborate:</label><br>
+      <textarea id="back_problems" name="back_problems"></textarea><br><br>
+
+      <label for="sciatica">Do you suffer from Sciatica?</label><br>
+      <input type="radio" id="sciatica_yes" name="sciatica" value="Yes">
+      <label for="sciatica_yes">Yes</label>
+      <input type="radio" id="sciatica_no" name="sciatica" value="No">
+      <label for="sciatica_no">No</label><br><br>
+
+      <label for="numbness_tingling">Do you have numbness or tingling?</label><br>
+      <input type="radio" id="numbness_tingling_yes" name="numbness_tingling" value="Yes">
+      <label for="numbness_tingling_yes">Yes</label>
+      <input type="radio" id="numbness_tingling_no" name="numbness_tingling" value="No">
+      <label for="numbness_tingling_no">No</label><br><br>
+
+      <label for="seizures">Do you suffer from seizures?</label><br>
+      <input type="radio" id="seizures_yes" name="seizures" value="Yes">
+      <label for="seizures_yes">Yes</label>
+      <input type="radio" id="seizures_no" name="seizures" value="No">
+      <label for="seizures_no">No</label><br><br>
+
+      <label for="cancer">Have you been diagnosed with any cancer?</label><br>
+      <input type="radio" id="cancer_yes" name="cancer" value="Yes">
+      <label for="cancer_yes">Yes</label>
+      <input type="radio" id="cancer_no" name="cancer" value="No">
+      <label for="cancer_no">No</label><br>
+      <label for="chemotherapy">If yes, When did you have your last chemotherapy?</label>
+      <input type="datetime-local" id="chemotherapy" name="chemotherapy"><br>
+      <label for="radiation">b) Have you received any radiation? If yes, When was your last radiation?</label>
+      <input type="datetime-local" id="radiation" name="radiation"><br><br>
+
+      <label for="blood_thinners">Do you take any blood thinners?</label><br>
+      <input type="radio" id="blood_thinners_yes" name="blood_thinners" value="Yes">
+      <label for="blood_thinners_yes">Yes</label>
+      <input type="radio" id="blood_thinners_no" name="blood_thinners" value="No">
+      <label for="blood_thinners_no">No</label><br><br>
+
+      <label for="morning_medications">Did you take any medications this morning? Please list them:</label><br>
+      <textarea id="morning_medications" name="morning_medications"></textarea><br><br>
+
+      <label for="steroids">Do you take any steroids?</label><br>
+      <input type="radio" id="steroids_yes" name="steroids" value="Yes">
+      <label for="steroids_yes">Yes</label>
+      <input type="radio" id="steroids_no" name="steroids" value="No">
+      <label for="steroids_no">No</label><br><br>
+
+      <label for="jehovah_witness">Are you Jehovah's Witness?</label><br>
+      <input type="radio" id="jehovah_yes" name="jehovah_witness" value="Yes">
+      <label for="jehovah_yes">Yes</label>
+      <input type="radio" id="jehovah_no" name="jehovah_witness" value="No">
+      <label for="jehovah_no">No</label><br>
+      <label for="blood_transfusion">If no, are you okay to receive blood?</label><br>
+      <input type="radio" id="blood_transfusion_yes" name="blood_transfusion" value="Yes">
+      <label for="blood_transfusion_yes">Yes</label>
+      <input type="radio" id="blood_transfusion_no" name="blood_transfusion" value="No">
+      <label for="blood_transfusion_no">No</label><br><br>
+       <label for="past_surgeries">Have you had any surgeries in the past? Please list:</label><br>
+      <textarea id="past_surgeries" name="past_surgeries"></textarea><br><br>
+      <label for="anesthesia_issues">Have you had any issues with previous anesthesia? If yes, please elaborate:</label><br>
+      <textarea id="anesthesia_issues" name="anesthesia_issues"></textarea><br><br>
+      <input type="submit" value="Submit" onclick="downloadFormData()">
+   </form>
+
+<script>
+    function downloadFormData() {
+        const formData = new FormData(document.getElementById('healthForm'));
+        const data = {};
+
+        // Iterate through each radio button group
+        const radioGroups = document.querySelectorAll('input[type="radio"]');
+        radioGroups.forEach(radio => {
+            // Check if a radio button in the group is selected
+            const selectedRadio = document.querySelector(`input[name="${radio.name}"]:checked`);
+            // If a radio button is selected, add its value to the data object, otherwise set it to null
+            data[radio.name] = selectedRadio ? selectedRadio.value : null;
+        });
+
+        // Gather other form data
+        const otherFormData = Object.fromEntries(formData.entries());
+        Object.assign(data, otherFormData);
+
+        // Convert data to JSON format
+        const jsonData = JSON.stringify(data, null, 2);
+
+        // Create a blob object with the JSON data
+        const blob = new Blob([jsonData], { type: 'application/json' });
+
+        // Create a temporary anchor element
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+
+        // Set the file name
+        const date = new Date();
+        const fileName = `Health_Questionnaire_${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}.json`;
+        a.download = fileName;
+
+        // Append the anchor element to the body and trigger the click event
+        document.body.appendChild(a);
+        a.click();
+
+        // Remove the anchor element
+        document.body.removeChild(a);
+    }
+</script>
+
+</body>
+</html>
